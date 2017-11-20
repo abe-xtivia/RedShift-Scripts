@@ -39,7 +39,7 @@ foreign key(advertiser_id) references targetdfa2_advertisers(advertiser_id),
 foreign key(ad_id) references targetdfa2_ads(ad_id),
 foreign key(rendering_id) references targetdfa2_creatives(rendering_id),
 foreign key(site_id_dcm) references targetdfa2_sites(site_id_dcm),
-foreign key(placement_id) references targetdfa2_placements(placement_id)
+foreign key(placement_id) references targetdfa2_placements(placement_id)asdf
 
 DISTSTYLE EVEN
 ;
