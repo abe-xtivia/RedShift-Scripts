@@ -29,4 +29,5 @@ CREATE TABLE IF NOT EXISTS "gaintheory_us_targetusa"."targetdfa2_click"
 )
 
 distkey(md_user_id_numeric)
+sortkey(md_event_time)
 ;
