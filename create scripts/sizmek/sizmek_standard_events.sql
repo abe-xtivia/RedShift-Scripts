@@ -50,8 +50,7 @@ CREATE TABLE mec_us_trp.sizmek_standard_events
    md_user_id_numeric        bigint           NOT NULL ENCODE raw,
    acquiredtime              timestamp ENCODE zstd
 )
-distkey(eventdatedefaulttimezone)
-INTERLEAVED SORTKEY(eventdatedefaulttimezone, eventtypeid, advertiserid)
+diststyle even
 ;
 
 

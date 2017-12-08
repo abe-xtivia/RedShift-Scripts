@@ -100,8 +100,7 @@ CREATE TABLE mec_us_trp.sizmek_conversion_events
    md_user_id_numeric              bigint           NOT NULL ENCODE zstd,
    acquiredtime                    timestamp  ENCODE zstd
 )
-distkey(conversiondatedefaulttimezone)
-interleaved sortkey(conversiondatedefaulttimezone, eventtypeid, winnerentityid, advertiserid)
+diststyle even
 ;
 
 

@@ -557,7 +557,8 @@ CREATE TABLE IF NOT EXISTS mec_us_trp_new.sizmek_conversion_events
    useridnumeric                   bigint           NOT NULL ENCODE zstd,
    md_file_date                    integer          NOT NULL ENCODE zstd,
    md_user_id_numeric              bigint           NOT NULL ENCODE zstd,
-   acquiredtime                    timestamp  ENCODE zstd
+   acquiredtime                    timestamp  ENCODE zstd,
+   accountid_string1               varchar(65535) ENCODE zstd
 )
 distkey(conversiondatedefaulttimezone)
 interleaved sortkey(conversiondatedefaulttimezone, eventtypeid, winnerentityid)

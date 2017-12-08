@@ -17,8 +17,7 @@ CREATE TABLE mec_us_trp.sizmek_site_visit_events
    md_user_id_numeric            bigint ENCODE zstd,
    acquiredtime                  timestamp ENCODE zstd
 )
-distkey(sitevisittimedefaulttimezone)
-sortkey(sitevisittimedefaulttimezone)
+diststyle even
 ;
 
 
