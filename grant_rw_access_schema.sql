@@ -26,7 +26,7 @@ ALTER DEFAULT PRIVILEGES in SCHEMA [schemaname] GRANT ALL PRIVILEGES on TABLES t
 
 -- Give read-only access of particular schema to group
 GRANT SELECT, UPDATE, INSERT, DELETE ON ALL TABLES IN SCHEMA [schemaname] to GROUP [groupname];
-GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA [schemaname] to GROUP [groupname]
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA [schemaname] to GROUP [groupname];
 
 -- Give Full Access for particular table to group
 GRANT SELECT, UPDATE, INSERT, DELETE ON [schemaname].[tablename] to GROUP [groupname];
